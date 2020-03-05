@@ -8,15 +8,17 @@ import os
 import logging.handlers
 
 
-path = os.path.dirname(os.path.abspath(__file__))
+# path = os.path.dirname(os.path.abspath(__file__))
+path = "D:\\PythonProject\\auto_wallpaper\\"
 
-img_path = os.path.join(path, "IMG")
+# img_path = os.path.join(path, "IMG")
+img_path = path + "IMG\\"
 
 debug = False
 
 formatter = logging.Formatter('[%(name)s] %(asctime)s [%(levelname)s] %(filename)s:%(lineno)s: %(message)s',
                               datefmt='%Y-%m-%d %H:%M:%S')
-file_handler = logging.handlers.RotatingFileHandler(os.path.join(path, "run.log"), maxBytes=1024 * 1024 * 20,
+file_handler = logging.handlers.RotatingFileHandler(path + "run.log", maxBytes=1024 * 1024 * 20,
                                                     backupCount=3)
 file_handler.setFormatter(fmt=formatter)
 file_handler.setLevel(logging.INFO)

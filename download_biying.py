@@ -9,9 +9,12 @@ import logging.handlers
 import os
 
 
-path = os.path.dirname(os.path.abspath(__file__))
+# path = os.path.dirname(os.path.abspath(__file__))
+path = "D:\\PythonProject\\auto_wallpaper\\"
 
-img_path = os.path.join(path, "IMG")
+# img_path = os.path.join(path, "IMG")
+img_path = path + "IMG\\"
+
 
 formatter = logging.Formatter('[%(name)s] %(asctime)s [%(levelname)s] %(filename)s:%(lineno)s: %(message)s',
                               datefmt='%Y-%m-%d %H:%M:%S')
