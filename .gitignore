@@ -1,0 +1,11 @@
+*.iml
+*.patch
+*.diff
+*.egg*
+*.log
+*.py[cod]
+*.so
+.idea
+__pycache__
+IMG
+*.jpg
