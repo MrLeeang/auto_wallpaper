@@ -50,4 +50,4 @@ while True:
         logging.exception(e)
         logging.error("壁纸更换失败")
     finally:
-        time.sleep(1 * 60)
+        time.sleep(60 * 60)
